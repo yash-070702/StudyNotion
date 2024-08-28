@@ -11,7 +11,7 @@
     "dev": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Yash Aggarwal",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
