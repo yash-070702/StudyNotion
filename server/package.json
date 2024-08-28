@@ -1,6 +1,7 @@
 {
   "name": "mega_project",
   "version": "1.0.0",
+
   "engines": {
     "node": ">=14.x",
     "npm": ">=6.x"
@@ -9,8 +10,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-     "postinstall": "npm rebuild bcrypt --build-from-source"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
