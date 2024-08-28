@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.2",
     "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "chart.js": "^4.4.3",
     "concurrently": "^8.2.2",
     "copy-to-clipboard": "^3.3.3",
