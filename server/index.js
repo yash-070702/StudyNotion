@@ -28,12 +28,16 @@ database.connect();
 // Middlewares
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-	cors({
-		origin: "https://studynotion-woad.vercel.app",
-		credentials: true,
-	})
-);
+const corsOptions = {
+	origin: 'https://studynotion-woad.vercel.app', // Replace with your frontend's URL
+	methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify methods you need to allow
+	allowedHeaders: ['Content-Type', 'Authorization'], // Specify headers you need to allow
+  };
+  
+  app.use(cors(corsOptions));
+  
+  // Handle preflight requests
+  app.options('*', cors(corsOptions)); 
 app.use(
 	fileUpload({
 		useTempFiles: true,
