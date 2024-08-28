@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Importing necessary modules and packages
 const express = require("express");
 const database = require("./config/database");
